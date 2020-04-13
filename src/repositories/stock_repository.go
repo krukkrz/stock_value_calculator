@@ -12,6 +12,7 @@ import (
 
 type StockRepository interface {
 	GetIndexesArray() []string
+	GetCompanyForIndex(index string) *entities.Company
 }
 
 type StockRepositoryImpl struct {
@@ -60,11 +61,13 @@ func (sr *StockRepositoryImpl) GetCompanyForIndex(index string) *entities.Compan
 		fmt.Errorf("ERROR: %v", err)
 	}
 
+	// TODO przemyśl, czy nie użyć tych wartości z trzech dni uśrednionych
+	priceEarningsRatio, _ := strconv.ParseFloat(companyDto.Ratios[0].InvestmentValuationRatios.PriceEarningsRatio, 64)
 	priceEarningsToGrowthRatio, _ := strconv.ParseFloat(companyDto.Ratios[0].InvestmentValuationRatios.PriceEarningsToGrowthRatio, 64)
 	dividendYield, _ := strconv.ParseFloat(companyDto.Ratios[0].InvestmentValuationRatios.DividendYield, 64)
 
-	// TODO przemyśl, czy nie użyć tych wartości z trzech dni uśrednionych
 	return &entities.Company{
+		PriceEarningsRatio:         priceEarningsRatio,
 		PriceEarningsToGrowthRatio: priceEarningsToGrowthRatio,
 		DividendYield:              dividendYield,
 	}

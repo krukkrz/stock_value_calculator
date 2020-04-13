@@ -35,6 +35,7 @@ func TestGetCompanyForIndex(t *testing.T) {
 	mockDatasource := mocks.NewMockDatasource(string(response))
 	repository := repositories.NewStockRepositoryImpl(mockDatasource)
 	expected := &entities.Company{
+		PriceEarningsRatio:         -23.28911282026003,
 		PriceEarningsToGrowthRatio: -5137.711820504985,
 		DividendYield:              0,
 	}
