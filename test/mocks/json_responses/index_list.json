@@ -1,0 +1,27 @@
+{
+    "symbolsList" : [ {
+      "symbol" : "SPY",
+      "name" : "SPDR S&P 500",
+      "price" : 325.64
+    }, {
+      "symbol" : "CMCSA",
+      "name" : "Comcast Corporation Class A Common Stock",
+      "price" : 44.98
+    }, {
+      "symbol" : "KMI",
+      "name" : "Kinder Morgan Inc.",
+      "price" : 21.51
+    }, {
+      "symbol" : "INTC",
+      "name" : "Intel Corporation",
+      "price" : 58.94
+    }, {
+      "symbol" : "MU",
+      "name" : "Micron Technology Inc.",
+      "price" : 56.67
+    }, {
+      "symbol" : "GDX",
+      "name" : "VanEck Vectors Gold Miners",
+      "price" : 23.71
+    }]
+  }

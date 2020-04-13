@@ -1,0 +1,227 @@
+{
+    "symbol": "CCC",
+    "ratios": [
+      {
+        "date": "2019-12-31",
+        "investmentValuationRatios": {
+          "priceBookValueRatio": "3.611749349079544",
+          "priceToBookRatio": "3.611749349079544",
+          "priceToSalesRatio": "5.0428412476894735",
+          "priceEarningsRatio": "-23.28911282026003",
+          "receivablesTurnover": "2.9184413732784598",
+          "priceToFreeCashFlowsRatio": "42.7425266885303",
+          "priceToOperatingCashFlowsRatio": "41.788290146963774",
+          "priceCashFlowRatio": "41.788290146963774",
+          "priceEarningsToGrowthRatio": "-5137.711820504985",
+          "priceSalesRatio": "5.0428412476894735",
+          "dividendYield": "",
+          "enterpriseValueMultiple": "31.186854374138647",
+          "priceFairValue": "3.611749349079544"
+        },
+        "profitabilityIndicatorRatios": {
+          "niperEBT": "1.0508078654819302",
+          "ebtperEBIT": "4.659781372571773",
+          "ebitperRevenue": "-0.04422150265049854",
+          "grossProfitMargin": "0.0",
+          "operatingProfitMargin": "-0.04422150265049854",
+          "pretaxProfitMargin": "-0.2060625343179264",
+          "netProfitMargin": "-0.2165321318424172",
+          "effectiveTaxRate": "-0.050807865481930115",
+          "returnOnAssets": "-0.055646624928027355",
+          "returnOnEquity": "-0.15508316598207014",
+          "returnOnCapitalEmployed": "-0.013720344685169564",
+          "nIperEBT": "1.0508078654819302",
+          "eBTperEBIT": "4.659781372571773",
+          "eBITperRevenue": "-0.04422150265049854"
+        },
+        "operatingPerformanceRatios": {
+          "receivablesTurnover": "2.9184413732784598",
+          "payablesTurnover": "0.0",
+          "inventoryTurnover": "",
+          "fixedAssetTurnover": "11.402782979121804",
+          "assetTurnover": "0.2569901494736337"
+        },
+        "liquidityMeasurementRatios": {
+          "currentRatio": "0.7574155373749228",
+          "quickRatio": "0.6297838088596278",
+          "cashRatio": "0.11694352363601732",
+          "daysOfSalesOutstanding": "125.06675766797181",
+          "daysOfInventoryOutstanding": "",
+          "operatingCycle": "",
+          "daysOfPayablesOutstanding": "",
+          "cashConversionCycle": ""
+        },
+        "debtRatios": {
+          "debtRatio": "0.6411820420634119",
+          "debtEquityRatio": "1.7869285187134485",
+          "longtermDebtToCapitalization": "0.045057528388650576",
+          "totalDebtToCapitalization": "6.41890000062779E7",
+          "interestCoverage": "-0.27324036552961845",
+          "cashFlowToDebtRatio": "1.6065255707824946",
+          "companyEquityMultiplier": "2.7869285187134487"
+        },
+        "cashFlowIndicatorRatios": {
+          "operatingCashFlowPerShare": "0.4293068689077118",
+          "freeCashFlowPerShare": "0.4197224963028237",
+          "cashPerShare": "0.2779650614895739",
+          "payoutRatio": "-0.0",
+          "receivablesTurnover": "2.9184413732784598",
+          "operatingCashFlowSalesRatio": "0.12067594127336827",
+          "freeCashFlowOperatingCashFlowRatio": "0.9776747746215343",
+          "cashFlowCoverageRatios": "1.6065255707824946",
+          "shortTermCoverageRatios": "13.064444444444444",
+          "capitalExpenditureCoverageRatios": "44.79238095238095",
+          "dividendpaidAndCapexCoverageRatios": "",
+          "dividendPayoutRatio": ""
+        }
+      },
+      {
+        "date": "2018-12-31",
+        "investmentValuationRatios": {
+          "priceBookValueRatio": "165.08243396702642",
+          "priceToBookRatio": "165.08243396702642",
+          "priceToSalesRatio": "0.0",
+          "priceEarningsRatio": "664.8477735911064",
+          "receivablesTurnover": "0.0",
+          "priceToFreeCashFlowsRatio": "-893.6275597754598",
+          "priceToOperatingCashFlowsRatio": "-893.6275597754598",
+          "priceCashFlowRatio": "-893.6275597754598",
+          "priceEarningsToGrowthRatio": "46188.35549101891",
+          "priceSalesRatio": "",
+          "dividendYield": "",
+          "enterpriseValueMultiple": "401.00915815256104",
+          "priceFairValue": "165.08243396702642"
+        },
+        "profitabilityIndicatorRatios": {
+          "niperEBT": "0.6057486070044986",
+          "ebtperEBIT": "1.0",
+          "ebitperRevenue": "",
+          "grossProfitMargin": "",
+          "operatingProfitMargin": "",
+          "pretaxProfitMargin": "",
+          "netProfitMargin": "",
+          "effectiveTaxRate": "0.39425139299550144",
+          "returnOnAssets": "0.0017775471093237646",
+          "returnOnEquity": "0.24830110067955974",
+          "returnOnCapitalEmployed": "0.0029460393255068018",
+          "nIperEBT": "0.6057486070044986",
+          "eBTperEBIT": "1.0",
+          "eBITperRevenue": ""
+        },
+        "operatingPerformanceRatios": {
+          "receivablesTurnover": "0.0",
+          "payablesTurnover": "0.0",
+          "inventoryTurnover": "0.0",
+          "fixedAssetTurnover": "",
+          "assetTurnover": "0.0"
+        },
+        "liquidityMeasurementRatios": {
+          "currentRatio": "1.4075434696345668",
+          "quickRatio": "1.2856022128074502",
+          "cashRatio": "1.2856022128074502",
+          "daysOfSalesOutstanding": "0.0",
+          "daysOfInventoryOutstanding": "0.0",
+          "operatingCycle": "",
+          "daysOfPayablesOutstanding": "0.0",
+          "cashConversionCycle": ""
+        },
+        "debtRatios": {
+          "debtRatio": "0.038506491204138064",
+          "debtEquityRatio": "5.3788752484499005",
+          "longtermDebtToCapitalization": "0",
+          "totalDebtToCapitalization": "0",
+          "interestCoverage": "",
+          "cashFlowToDebtRatio": "",
+          "companyEquityMultiplier": "139.6874937250025"
+        },
+        "cashFlowIndicatorRatios": {
+          "operatingCashFlowPerShare": "-0.010709159420289854",
+          "freeCashFlowPerShare": "-0.010709159420289854",
+          "cashPerShare": "0.04090655072463768",
+          "payoutRatio": "-0.0",
+          "receivablesTurnover": "0.0",
+          "operatingCashFlowSalesRatio": "",
+          "freeCashFlowOperatingCashFlowRatio": "1.0",
+          "cashFlowCoverageRatios": "",
+          "shortTermCoverageRatios": "",
+          "capitalExpenditureCoverageRatios": "",
+          "dividendpaidAndCapexCoverageRatios": "",
+          "dividendPayoutRatio": "-0"
+        }
+      },
+      {
+        "date": "2017-12-31",
+        "investmentValuationRatios": {
+          "priceBookValueRatio": "",
+          "priceToBookRatio": "",
+          "priceToSalesRatio": "",
+          "priceEarningsRatio": "",
+          "receivablesTurnover": "",
+          "priceToFreeCashFlowsRatio": "",
+          "priceToOperatingCashFlowsRatio": "",
+          "priceCashFlowRatio": "",
+          "priceEarningsToGrowthRatio": "",
+          "priceSalesRatio": "",
+          "dividendYield": "",
+          "enterpriseValueMultiple": "",
+          "priceFairValue": ""
+        },
+        "profitabilityIndicatorRatios": {
+          "niperEBT": "",
+          "ebtperEBIT": "",
+          "ebitperRevenue": "",
+          "grossProfitMargin": "",
+          "operatingProfitMargin": "",
+          "pretaxProfitMargin": "",
+          "netProfitMargin": "",
+          "effectiveTaxRate": "",
+          "returnOnAssets": "",
+          "returnOnEquity": "",
+          "returnOnCapitalEmployed": "",
+          "nIperEBT": "",
+          "eBTperEBIT": "",
+          "eBITperRevenue": ""
+        },
+        "operatingPerformanceRatios": {
+          "receivablesTurnover": "",
+          "payablesTurnover": "",
+          "inventoryTurnover": "",
+          "fixedAssetTurnover": "0",
+          "assetTurnover": "0"
+        },
+        "liquidityMeasurementRatios": {
+          "currentRatio": "0.67149618877189",
+          "quickRatio": "0.56119974647278",
+          "cashRatio": "0.080454049704042",
+          "daysOfSalesOutstanding": "",
+          "daysOfInventoryOutstanding": "",
+          "operatingCycle": "",
+          "daysOfPayablesOutstanding": "",
+          "cashConversionCycle": ""
+        },
+        "debtRatios": {
+          "debtRatio": "",
+          "debtEquityRatio": "",
+          "longtermDebtToCapitalization": "0.604742210821",
+          "totalDebtToCapitalization": "0.61017475219645",
+          "interestCoverage": "0.4786",
+          "cashFlowToDebtRatio": "0.0033118405627198",
+          "companyEquityMultiplier": "3.1141375594236"
+        },
+        "cashFlowIndicatorRatios": {
+          "operatingCashFlowPerShare": "",
+          "freeCashFlowPerShare": "",
+          "cashPerShare": "",
+          "payoutRatio": "",
+          "receivablesTurnover": "",
+          "operatingCashFlowSalesRatio": "",
+          "freeCashFlowOperatingCashFlowRatio": "0",
+          "cashFlowCoverageRatios": "0.0033118405627198",
+          "shortTermCoverageRatios": "0.14702833829529",
+          "capitalExpenditureCoverageRatios": "0.17635699925934",
+          "dividendpaidAndCapexCoverageRatios": "0.17635699925934",
+          "dividendPayoutRatio": ""
+        }
+      }
+    ]
+  }

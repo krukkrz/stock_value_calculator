@@ -7,9 +7,16 @@ import (
 	"os"
 )
 
-// todo dodaj obsługę błędów
+// TODO dodaj obsługę błędów
 
-func GetListOfIndexes(stockUrl string) (string, error) {
+type StockDatasource interface {
+	GetListOfIndexes(stockUrl string) (string, error)
+	GetStockDataForIndex(stockUrl, index string) (string, error)
+}
+
+type StockDatasourceImpl struct{}
+
+func (sd *StockDatasourceImpl) GetListOfIndexes(stockUrl string) (string, error) {
 
 	if stockUrl == "" {
 		stockUrl = os.Getenv("StockURL")
@@ -21,7 +28,7 @@ func GetListOfIndexes(stockUrl string) (string, error) {
 	return response, nil
 }
 
-func GetStockDataForIndex(stockUrl, index string) (string, error) {
+func (sd *StockDatasourceImpl) GetStockDataForIndex(stockUrl, index string) (string, error) {
 
 	if stockUrl == "" {
 		stockUrl = os.Getenv("StockURL")

@@ -17,8 +17,9 @@ func TestMain(t *testing.M) {
 }
 
 // Should receive http response body with a list of indexes as JSON object when response code is 200
-func TestObtainListOfIndexes(t *testing.T) {
+func TestGetListOfIndexes(t *testing.T) {
 	// given
+	datasource := datasources.StockDatasourceImpl{}
 	expected := "body"
 	testServer := httptest.NewServer(http.HandlerFunc(func(res http.ResponseWriter, req *http.Request) {
 		res.Write([]byte(expected))
@@ -27,7 +28,7 @@ func TestObtainListOfIndexes(t *testing.T) {
 	defer func() { testServer.Close() }()
 
 	// when
-	result, err := datasources.GetListOfIndexes(testServer.URL)
+	result, err := datasource.GetListOfIndexes(testServer.URL)
 
 	// then
 	if err != nil {
@@ -40,8 +41,10 @@ func TestObtainListOfIndexes(t *testing.T) {
 }
 
 // should obtain stock data for a given company
-func TestObtainStockDataForIndex(t *testing.T) {
+func TestGetStockDataForIndex(t *testing.T) {
 	// given
+	datasource := datasources.StockDatasourceImpl{}
+
 	index := "CCC"
 	expected := "body"
 	testServer := httptest.NewServer(http.HandlerFunc(func(res http.ResponseWriter, req *http.Request) {
@@ -50,7 +53,7 @@ func TestObtainStockDataForIndex(t *testing.T) {
 	defer func() { testServer.Close() }()
 
 	// when
-	result, err := datasources.GetStockDataForIndex(testServer.URL, index)
+	result, err := datasource.GetStockDataForIndex(testServer.URL, index)
 
 	// then
 	if err != nil {
