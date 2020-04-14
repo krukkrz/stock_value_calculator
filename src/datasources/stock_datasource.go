@@ -1,21 +1,21 @@
 package datasources
 
 import (
-	"fmt"
 	"io/ioutil"
 	"net/http"
 	"os"
 )
 
-// TODO dodaj obsługę błędów
-
+// StockDatasource interface
 type StockDatasource interface {
 	GetListOfIndexes(stockUrl string) (string, error)
 	GetStockDataForIndex(stockUrl, index string) (string, error)
 }
 
+// StockDatasourceImpl implementation of StockDatasource
 type StockDatasourceImpl struct{}
 
+// GetListOfIndexes returns JSON with list of indexes
 func (sd *StockDatasourceImpl) GetListOfIndexes(stockUrl string) (string, error) {
 
 	if stockUrl == "" {
@@ -23,11 +23,15 @@ func (sd *StockDatasourceImpl) GetListOfIndexes(stockUrl string) (string, error)
 		stockUrl += "company/stock/list"
 	}
 
-	response := makeHttpRequest(stockUrl)
+	response, err := makeHttpRequest(stockUrl)
+	if err != nil {
+		return "", err
+	}
 
 	return response, nil
 }
 
+// GetStockDataForIndex ...
 func (sd *StockDatasourceImpl) GetStockDataForIndex(stockUrl, index string) (string, error) {
 
 	if stockUrl == "" {
@@ -35,24 +39,27 @@ func (sd *StockDatasourceImpl) GetStockDataForIndex(stockUrl, index string) (str
 		stockUrl += "/financial-ratios/" + index
 	}
 
-	response := makeHttpRequest(stockUrl)
+	response, err := makeHttpRequest(stockUrl)
+	if err != nil {
+		return "", err
+	}
 
 	return response, nil
 }
 
-func makeHttpRequest(url string) string {
+func makeHttpRequest(url string) (string, error) {
 	var client http.Client
 	rawResponse, resErr := client.Get(url)
 	if resErr != nil {
-		fmt.Errorf("Error: %v", resErr)
+		return "", resErr
 	}
 
 	defer rawResponse.Body.Close()
 
 	response, err := ioutil.ReadAll(rawResponse.Body)
 	if err != nil {
-		fmt.Errorf("Error: %v", err)
+		return "", err
 	}
 
-	return string(response)
+	return string(response), nil
 }
